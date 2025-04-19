@@ -1,4 +1,5 @@
-import '/styles/index.css';
+// import '/styles/index.css';
+
 const cardTemplate = document.querySelector('#card-template').content;
 
 // cards
