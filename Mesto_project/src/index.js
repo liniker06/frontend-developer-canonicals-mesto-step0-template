@@ -1,16 +1,16 @@
-import addIconImg from '../images/add-icon.svg';
-import avatarImg from '../images/avatar.jpg';
-import card1Img from '../images/card_1.jpg';
-import card2Img from '../images/card_2.jpg';
-import card3Img from '../images/card_3.jpg';
-import closeImg from '../images/close.svg';
-import deleteIconImg from '../images/delete-icon.svg';
-import editIconImg from '../images/edit-icon.svg';
-import likeActiveImg from '../images/like-active.svg';
-import likeInactiveImg from '../images/like-inactive.svg';
-import logoImg from '../images/logo.svg';
-
-import '../pages/index.css';
+import addIconImg from './images/add-icon.svg';
+import avatarImg from './images/avatar.jpg';
+import card1Img from './images/card_1.jpg';
+import card2Img from './images/card_2.jpg';
+import card3Img from './images/card_3.jpg';
+import closeImg from './images/close.svg';
+import deleteIconImg from './images/delete-icon.svg';
+import editIconImg from './images/edit-icon.svg';
+import likeActiveImg from './images/like-active.svg';
+import likeInactiveImg from './images/like-inactive.svg';
+import logoImg from './images/logo.svg';
+//
+import './styles/index.css';
 
 const initialCards = [
     {
@@ -38,9 +38,9 @@ const initialCards = [
         link: "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg",
     }
 ];
-import {enableValidation} from '../components/validate.js';
-import {openModal, closeModal, setupPopupCloseHandlers} from '../components/modal.js';
-import {createCard} from '../components/card.js';
+import {enableValidation} from './components/validate.js';
+import {openModal, closeModal, setupPopupCloseHandlers} from './components/modal.js';
+import {createCard} from './components/card.js';
 import {
     getProfileInfo,
     getInitialCards,
@@ -50,7 +50,7 @@ import {
     likeCard,
     unlikeCard,
     updateAvatar
-} from '../components/api.js';
+} from './components/api.js';
 
 // Настройки валидации
 const validationSettings = {
