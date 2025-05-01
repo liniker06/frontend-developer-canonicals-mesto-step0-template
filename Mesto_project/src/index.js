@@ -159,7 +159,7 @@ const handleProfileFormSubmit = (evt) => {
 };
 
 const renderCard = (cardData, container, method = 'append') => {
-    const card = createCard(
+    const initialCards = createCard(
         cardData,
         userId,
         openImagePopup,
@@ -167,9 +167,9 @@ const renderCard = (cardData, container, method = 'append') => {
     );
 
     if (method === 'prepend') {
-        container.prepend(card);
+        container.prepend(initialCards);
     } else {
-        container.append(card);
+        container.append(initialCards);
     }
 };
 
