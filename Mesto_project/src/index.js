@@ -9,7 +9,7 @@ import editIconImg from './images/edit-icon.svg';
 import likeActiveImg from './images/like-active.svg';
 import likeInactiveImg from './images/like-inactive.svg';
 import logoImg from './images/logo.svg';
-//
+
 import './styles/index.css';
 
 const initialCards = [
@@ -159,7 +159,7 @@ const handleProfileFormSubmit = (evt) => {
 };
 
 const renderCard = (cardData, container, method = 'append') => {
-    const initialCards = createCard(
+    const card = createCard(
         cardData,
         userId,
         openImagePopup,
@@ -167,9 +167,9 @@ const renderCard = (cardData, container, method = 'append') => {
     );
 
     if (method === 'prepend') {
-        container.prepend(initialCards);
+        container.prepend(card);
     } else {
-        container.append(initialCards);
+        container.append(card);
     }
 };
 
